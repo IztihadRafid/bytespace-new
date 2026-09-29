@@ -12,6 +12,7 @@ const CourseCard = () => {
           key={idx}
           className="border border-shuttle-gray-200 rounded-3xl p-4"
         >
+          {/* Image Container with Floating Glassmorphism Badges Overlay */}
           <div className="w-full relative overflow-hidden rounded-xl">
             <Image
               src={course.courseImg}
@@ -20,7 +21,21 @@ const CourseCard = () => {
               height={450}
               className="w-full h-auto object-cover"
             />
+
+            {/* Added overlay block */}
+            <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-1 text-[11px] font-satoshi-500 text-black/80">
+              <span className="bg-white/60 backdrop-blur-md px-3 py-1.5 rounded-full">
+                17 Lessons
+              </span>
+              <span className="bg-white/60 backdrop-blur-md px-3 py-1.5 rounded-full">
+                2 hours 16 mins
+              </span>
+              <span className="bg-white/60 backdrop-blur-md px-3 py-1.5 rounded-full">
+                59 Comments
+              </span>
+            </div>
           </div>
+
           <div className="flex items-center justify-between my-4">
             <h4 className="text-black-950 font-poppins-600 text-[20px] leading-[120%] tracking-[-1%]">
               {course?.title}
@@ -28,7 +43,7 @@ const CourseCard = () => {
             <p className="flex items-center justify-end text-black-700">
               {course?.rating}
               <span className="w-6 h-6">
-                <Star color="CED0D3" fill="#CED0D3" width={16} height={16} />
+                <Star color="#CED0D3" fill="#CED0D3" width={16} height={16} />
               </span>
             </p>
           </div>
@@ -40,7 +55,7 @@ const CourseCard = () => {
             <AvatarStack></AvatarStack>
           </div>
           <div className="mb-4">
-            <p className="text-persian-blue-800 font-poppins-600 text-[20px] leadin-[120%]">
+            <p className="text-persian-blue-800 font-poppins-600 text-[20px] leading-[120%]">
               ${course.price}{" "}
               <span className="text-black-700 text-[12px] leading-[160%]">
                 /lifetime

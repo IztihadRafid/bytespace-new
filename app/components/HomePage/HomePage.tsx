@@ -6,6 +6,9 @@ import CategorySkills from "./CategorySkills/CategorySkills";
 import CourseCard from "./CourseCard/CourseCard";
 import ExplorePath from "./ExplorePath/ExplorePath";
 import FeatureSection from "./FeatureSection/FeatureSection";
+import Footer from "../Footer/Footer";
+import BecomeCreator from "../BecomeCreator/BecomeCreator";
+import CommunityReviews from "../CommunityReviews/CommunityReviews";
 
 const HomePage = () => {
   return (
@@ -22,6 +25,9 @@ const HomePage = () => {
         <ExplorePath></ExplorePath>
       </div>
       <FeatureSection></FeatureSection>
+      <BecomeCreator></BecomeCreator>
+      <CommunityReviews></CommunityReviews>
+      <Footer></Footer>
     </div>
   );
 };

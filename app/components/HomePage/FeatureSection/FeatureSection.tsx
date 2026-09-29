@@ -25,7 +25,7 @@ const perks = [
 
 const FeatureSection = () => {
   return (
-    <section className="relative overflow-hidden py-24  bg-white ">
+    <section className="relative overflow-hidden py-24  bg-white pb-38">
       <div
         className="pointer-events-none absolute -left-40 -top-40 size-[1137px] rounded-full blur-[40px]"
         style={{
