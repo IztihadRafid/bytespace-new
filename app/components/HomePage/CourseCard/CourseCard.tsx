@@ -6,7 +6,7 @@ import AvatarStack from "../../ui/AvatarStack";
 
 const CourseCard = () => {
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-20 gap-10 bg-white w-[1200px] mx-auto">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 pt-20 gap-10 bg-white w-[1200px] mx-auto">
       {courses.map((course, idx) => (
         <div
           key={idx}
