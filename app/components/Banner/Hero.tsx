@@ -9,10 +9,10 @@ import spring2 from "@/public/assets/springwhite.png";
 import spring3 from "@/public/assets/springwhite3.png";
 import elipse from "@/public/assets/elipse7.png";
 import bannerImg from "@/public/assets/Image.png";
-import studentsImg from "@/public/assets/studentsprofile.png";
-import progressbar from "@/public/assets/progressbar.png";
 import Image from "next/image";
-import { Dot, Star } from "lucide-react";
+import { Dot } from "lucide-react";
+import ProgressBadge from "../ui/ProgressBadge";
+import HappyStudentBadge from "../ui/HappyStudentBadge";
 
 const Hero = () => {
   return (
@@ -84,27 +84,12 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="bg-white p-4 rounded-2xl flex flex-col gap-2 w-[220px] absolute top-15 left-[63%]">
-              <h2 className="font-satoshi-500 text-[14px] leading-[120%]">
-                Learning Progress
-              </h2>
-              <p className="font-semibold font-poppins-600 text-[48px] leading-[120%] tracking-[-1%]">
-                55%
-              </p>
-              <Image src={progressbar} alt="progressbar"></Image>
+            <div className="absolute top-15 left-[63%]">
+              <ProgressBadge></ProgressBadge>
             </div>
 
-            <div className="bg-white p-4 rounded-2xl flex flex-col gap-2 w-[258px] absolute top-60 left-[15%]">
-              <h2 className="font-satoshi-500 text-[16px] leading-[120%]">
-                Happy Students
-              </h2>
-              <div className=" font-semibold font-poppins-600 text-[48px] leading-[120%] tracking-[-1%]">
-                <p className="flex items-center gap-2 font-satoshi-400 text-[12px] leading-[160%]">
-                  4.5<span className="text-[#D1D1D1]"> (240)</span>
-                  <Star color="#d4fb20" fill="#d4fb20" />
-                </p>
-              </div>
-              <Image src={studentsImg} alt="progressbar"></Image>
+            <div className="absolute top-60 left-[15%]">
+              <HappyStudentBadge></HappyStudentBadge>
             </div>
           </div>
         </div>

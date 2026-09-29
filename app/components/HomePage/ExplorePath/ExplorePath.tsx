@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ExplorePath = () => {
   return (
-    <div className="flex flex-col items-center text-center gap-4   mx-auto">
+    <div className="flex flex-col items-center text-center gap-4 pb-24 mx-auto">
       <h2 className="font-poppins-600 text-[36px] leading-[120%] tracking-[-0.01em] text-[#040819]">
         Explore Diverse Learning Paths at Bytespace
       </h2>
