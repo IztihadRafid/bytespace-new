@@ -1,6 +1,8 @@
 import Navbar from "../Navbar";
 import Banner from "../Banner/Banner";
 import MarqueeSection from "./MarqueeSection/MarqueeSection";
+import DiscoverSection from "./DiscoverSection/DiscoverSection";
+import CategorySkills from "./CategorySkills/CategorySkills";
 
 const HomePage = () => {
   return (
@@ -8,6 +10,8 @@ const HomePage = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <MarqueeSection></MarqueeSection>
+      <DiscoverSection></DiscoverSection>
+      <CategorySkills></CategorySkills>
     </div>
   );
 };

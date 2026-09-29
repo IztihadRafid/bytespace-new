@@ -7,6 +7,9 @@
   --color-shuttle-gray-50: #f5f5f6;
   --color-shuttle-gray-100: #e5e6e8;
   --color-shuttle-gray-400: #82868e;
+  --color-shuttle-gray-950: #242528;
+  --color-shuttle-gray-700: #4b4c53;
+  --color-persian-blue-800: #003be2;
   /* Font families */
   --font-satoshi: var(--font-satoshi-local);
   --font-clash: var(--font-clash-local);
