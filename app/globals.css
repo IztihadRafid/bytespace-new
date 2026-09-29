@@ -10,6 +10,10 @@
   --color-shuttle-gray-950: #242528;
   --color-shuttle-gray-700: #4b4c53;
   --color-persian-blue-800: #003be2;
+  --color-shuttle-gray-200: #ced0d3;
+  --color-black-700: #4f4f4f;
+  --color-black-950: #000000;
+
   /* Font families */
   --font-satoshi: var(--font-satoshi-local);
   --font-clash: var(--font-clash-local);
