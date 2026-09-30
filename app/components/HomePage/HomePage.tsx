@@ -28,7 +28,9 @@ const HomePage = () => {
       <FeatureSection></FeatureSection>
       <BecomeCreator></BecomeCreator>
       <CommunityReviews></CommunityReviews>
-      <Footer></Footer>
+      <div className="bg-white">
+        <Footer></Footer>
+      </div>
     </div>
   );
 };

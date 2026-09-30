@@ -6,7 +6,7 @@ export default function CategoryChips() {
   const [active, setActive] = useState("Featured");
 
   return (
-    <div className="flex flex-col items-center gap-3 bg-white">
+    <div className="flex flex-col items-center gap-3 bg-white pb-20">
       {categoryRows.map((row, idx) => (
         <div key={idx} className="flex flex-wrap justify-center gap-4">
           {row.map((categoryskill) => (

@@ -21,7 +21,7 @@ interface CourseCardProps {
 
 const CourseCard = ({ course }: CourseCardProps) => {
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-4 gap-10 bg-white w-[1200px] mx-auto">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 bg-white w-[1200px] mx-auto">
       {courses.map((course, idx) => (
         <Link
           href={`/courses/${course.id}`}

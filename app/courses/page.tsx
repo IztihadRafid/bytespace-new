@@ -9,15 +9,16 @@ import Navbar from "../components/Navbar";
 import { SearchInput } from "../components/SearchInput";
 import Badge from "../components/Badge";
 import CategoryCourse from "../components/CategoryCourse/CategoryCourse";
-import CourseCard from "../components/HomePage/CourseCard/CourseCard";
 import Pagination from "../components/CategoryCourse/pagination/Pagination";
 import { courses } from "../../lib/data";
+import CourseCard from "../components/HomePage/CourseCard/CourseCard";
+import Footer from "../components/Footer/Footer";
 
 const CoursePage = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <section className="bg-brand flex flex-col gap-8 pt-8 pb-16">
+      <section className="bg-brand flex flex-col gap-8 pt-8 pb-16 max-w-[1440px] mx-auto">
         <h1 className="font-poppins-600 text-center text-[36px] leading-[120%] tracking-[-1%] text-shuttle-gray-50">
           Find Your Next Course
         </h1>
@@ -62,16 +63,14 @@ const CoursePage = () => {
         <CategoryCourse></CategoryCourse>
       </section>
       <section className="">
-        <div className="mx-auto grid w-[1200px] grid-cols-1 ">
-          {courses.map((course) => (
-            <CourseCard key={course.id} course={course} />
-          ))}
-        </div>
+        <CourseCard course={courses[0]}></CourseCard>
+        <CourseCard course={courses[0]}></CourseCard>
       </section>
 
       <section>
         <Pagination></Pagination>
       </section>
+      <Footer></Footer>
     </div>
   );
 };

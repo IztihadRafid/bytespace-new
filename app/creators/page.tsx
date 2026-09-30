@@ -15,7 +15,7 @@ const CreatorsPage = () => {
     <div>
       <Navbar></Navbar>
       <main>
-        <section className=" bg-brand">
+        <section className=" bg-brand max-w-[1440px] mx-auto">
           <div className="max-w-[1200px] mx-auto p-8 pb-20 text-white flex flex-col justify-between gap-10">
             <div className="flex items-center gap-6">
               <Image

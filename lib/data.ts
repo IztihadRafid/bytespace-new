@@ -16,7 +16,22 @@ export const categoryRows = [
   ["Digital Illustration", "Film & Video", "Crafts", "Freelance & Entrepreneurship", "Graphic Design", "Photography"],
   ["Productivity", "Web Development", "Data Science", "Cooking"],
 ];
-export const courses = [ { id: 1, title: "Learn Figma from Basic", courseImg: "/assets/courses/img1.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, { id: 2, title: "Build Digital Asset", courseImg: "/assets/courses/img2.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, { id: 3, title: "the Power of Big Data", courseImg: "/assets/courses/img3.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, { id: 4, title: "Balancing Productivity and Life", courseImg: "/assets/courses/img4.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, { id: 5, title: "Mastering Money Management", courseImg: "/assets/courses/img5.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, { id: 6, title: "From Idea to Startup Success", courseImg: "/assets/courses/img6.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, ];
+export const categoryCourseRows = [
+  ["Featured", "Music", "Drawing & Painting", "Marketing", "Animation", "Social Media", "UI/UX Design", "Creative Marketing","Cooking"],
+ 
+];
+export const courses = [ 
+  { id: 1, title: "Learn Figma from Basic", courseImg: "/assets/courses/img1.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, 
+  
+  { id: 2, title: "Build Digital Asset", courseImg: "/assets/courses/img2.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", },
+
+  { id: 3, title: "the Power of Big Data", courseImg: "/assets/courses/img3.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, 
+
+  { id: 4, title: "Balancing Productivity and Life", courseImg: "/assets/courses/img4.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, 
+  
+  { id: 5, title: "Mastering Money Management", courseImg: "/assets/courses/img5.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, 
+  
+  { id: 6, title: "From Idea to Startup Success", courseImg: "/assets/courses/img6.webp", price: 25, rating: 4.5, level: "Beginner", students: "26+", description: "Unlock the Power of Digital Creation with Expert Guidance", author: "purepearl studio", videoImg: "/assets/cardDetails/videoImg.webp", playIcon: "/assets/cardDetails/playIcon.png", }, ];
 export const sneakPeakImages = [
     "/assets/cardDetails/sneakpeak1.png",
     "/assets/cardDetails/sneakpeak2.png",
