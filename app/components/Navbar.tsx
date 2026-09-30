@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="text-shuttle-gray-50 flex gap-6 font-satoshi-400 ">
           <Link href="/">Home</Link>
           <Link href="/courses">Courses</Link>
-          <Link href="/creator">Creator</Link>
+          <Link href="/creators">Creator</Link>
         </div>
         <div className="text-shuttle-gray-50 flex gap-6 font-satoshi-400 ">
           <Link href="/signin">Signin</Link>
