@@ -11,6 +11,7 @@ import Badge from "../components/Badge";
 import CategoryCourse from "../components/CategoryCourse/CategoryCourse";
 import CourseCard from "../components/HomePage/CourseCard/CourseCard";
 import Pagination from "../components/CategoryCourse/pagination/Pagination";
+import { courses } from "../../lib/data";
 
 const CoursePage = () => {
   return (
@@ -57,14 +58,15 @@ const CoursePage = () => {
         </div>
       </section>
 
-      <section className="">
+      <section className="mb-10">
         <CategoryCourse></CategoryCourse>
       </section>
-
-      <section>
-        <CourseCard></CourseCard>
-        <CourseCard></CourseCard>
-        <CourseCard></CourseCard>
+      <section className="">
+        <div className="mx-auto grid w-[1200px] grid-cols-1 ">
+          {courses.map((course) => (
+            <CourseCard key={course.id} course={course} />
+          ))}
+        </div>
       </section>
 
       <section>

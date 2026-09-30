@@ -9,6 +9,7 @@ import FeatureSection from "./FeatureSection/FeatureSection";
 import Footer from "../Footer/Footer";
 import BecomeCreator from "../BecomeCreator/BecomeCreator";
 import CommunityReviews from "../CommunityReviews/CommunityReviews";
+import { courses } from "@/lib/data";
 
 const HomePage = () => {
   return (
@@ -19,7 +20,7 @@ const HomePage = () => {
       <DiscoverSection></DiscoverSection>
       <CategorySkills></CategorySkills>
       <div className="bg-white">
-        <CourseCard></CourseCard>
+        <CourseCard course={courses[0]}></CourseCard>
       </div>
       <div className="bg-white">
         <ExplorePath></ExplorePath>

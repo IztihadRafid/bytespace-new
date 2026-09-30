@@ -3,16 +3,31 @@ import { Star } from "lucide-react";
 import Image from "next/image";
 import LevelBadge from "../../ui/LevelBadge";
 import AvatarStack from "../../ui/AvatarStack";
+import Link from "next/link";
 
-const CourseCard = () => {
+interface Course {
+  id: number;
+  title: string;
+  courseImg: string;
+  rating: number;
+  level: string;
+  price: number;
+  students: string;
+}
+
+interface CourseCardProps {
+  course: Course;
+}
+
+const CourseCard = ({ course }: CourseCardProps) => {
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 pt-20 gap-10 bg-white w-[1200px] mx-auto">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-4 gap-10 bg-white w-[1200px] mx-auto">
       {courses.map((course, idx) => (
-        <div
+        <Link
+          href={`/courses/${course.id}`}
           key={idx}
           className="border border-shuttle-gray-200 rounded-3xl p-4"
         >
-          {/* Image Container with Floating Glassmorphism Badges Overlay */}
           <div className="w-full relative overflow-hidden rounded-xl">
             <Image
               src={course.courseImg}
@@ -62,7 +77,7 @@ const CourseCard = () => {
               </span>{" "}
             </p>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
