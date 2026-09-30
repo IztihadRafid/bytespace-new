@@ -1,6 +1,8 @@
 import Badge from "@/app/components/Badge";
 import CourseAboutSection from "@/app/components/CourseDetailsPageData/CourseAboutSection";
+import CourseLessonsSection from "@/app/components/CourseDetailsPageData/CourseLessonsSection";
 import CourseSidebar from "@/app/components/CourseDetailsPageData/CourseSidebar";
+import CourseTabs from "@/app/components/CourseDetailsPageData/CourseTabs";
 import PlayVideoSection from "@/app/components/CourseDetailsPageData/PlayVedioSection";
 import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar";
@@ -11,7 +13,10 @@ import Image from "next/image";
 interface CourseDetailsPageProps {
   params: Promise<{ id: string }>;
 }
-
+interface CourseTabsProps {
+  activeTab?: string;
+  onTabChange?: (tab: string) => void;
+}
 const CourseDetailsPage = async ({ params }: CourseDetailsPageProps) => {
   const { id } = await params;
 
@@ -85,13 +90,8 @@ const CourseDetailsPage = async ({ params }: CourseDetailsPageProps) => {
           </section>
         </div>
 
-        {/* <p>Price: ${course.price}</p>
-        <p>Rating: {course.rating}</p>
-        <p>Level: {course.level}</p>
-        <p>Students: {course.students}</p> */}
-
         <div className="max-w-[1200px] mx-auto">
-          <CourseAboutSection></CourseAboutSection>
+          <CourseTabs />
         </div>
       </main>
       <Footer />

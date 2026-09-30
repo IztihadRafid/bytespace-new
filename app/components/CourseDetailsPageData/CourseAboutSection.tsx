@@ -1,51 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
-import { sneakPeakImages } from "@/lib/data";
+import { keyPoints, sneakPeakImages } from "@/lib/data";
 
 export default function CourseAboutSection() {
-  const [activeTab, setActiveTab] = useState("About");
-
-  const tabs = ["About", "Lessons", "Reviews"];
-
-  const keyPoints = [
-    "Foundational Concepts",
-    "Design Principles Mastery",
-    "Advanced Techniques in Digital Creation",
-    "Project Showcase and Critique",
-    "Optimizing for Various Platforms",
-    "Digital Asset Management Best Practices",
-    "Monetization Strategies",
-    "Capstone Project: Building Your Portfolio",
-  ];
-
   return (
-    <div className="w-full max-w-[800px] bg-white font-sans text-shuttle-gray-950 mt-[72px] flex flex-col gap-10">
-      {/* Navigation Tabs */}
-      <div className="flex items-center gap-4 ">
-        {tabs.map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={`px-4 py-3 rounded-3xl text-[16px] leading-[120%] font-satoshi-500 transition-all ${
-              activeTab === tab
-                ? "bg-electric-lime-400 text-shuttle-gray-950"
-                : "bg-shuttle-gray-50 text-shuttle-gray-700 hover:bg-shuttle-gray-100"
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
-      </div>
-
-      {/* Description Header */}
+    <div className="flex flex-col gap-10 mb-20">
       <h2 className="text-xl font-poppins-600 leading-[120%] tracking-[-1%] text-shuttle-gray-950">
         Description
       </h2>
-
-      {/* Description Body Paragraphs */}
       <div className="space-y-3 font-satoshi-400 text-[16px] leading-[160%] text-shuttle-gray-700">
         <p>
           Embark on an enlightening exploration into the world of digital
@@ -82,7 +46,7 @@ export default function CourseAboutSection() {
       </div>
 
       {/* Sneak Peak Section */}
-      <div className="">
+      <div>
         <h3 className="text-xl font-poppins-600 leading-[120%] tracking-[-1%] text-shuttle-gray-950 mb-6">
           Sneak Peak
         </h3>
@@ -103,7 +67,7 @@ export default function CourseAboutSection() {
         </div>
       </div>
 
-      {/* Key Points Section */}
+      {/* KeyPoints Section */}
       <div>
         <h3 className="text-xl font-poppins-600 leading-[120%] tracking-[-1%] text-shuttle-gray-950 mb-6">
           Key Points
