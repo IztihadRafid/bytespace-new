@@ -20,7 +20,7 @@ interface CourseTabsProps {
 const CourseDetailsPage = async ({ params }: CourseDetailsPageProps) => {
   const { id } = await params;
 
-  const course = courses.find((course) => course.id === Number(id));
+  const course = courses.find((course) => String(course.id) === String(id));
 
   if (!course) {
     return <div>Course not found</div>;
@@ -28,8 +28,9 @@ const CourseDetailsPage = async ({ params }: CourseDetailsPageProps) => {
 
   return (
     <div className="">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-[size:80px_80px] pointer-events-none" />
       <Navbar />
-      <main className=" ">
+      <main className="max-w-[1440px] mx-auto">
         <div className="bg-brand h-[957px] py-10">
           <div className="flex justify-between max-w-[1200px] mx-auto mb-10">
             <div className=" flex flex-col gap-6 items-start">
@@ -71,7 +72,7 @@ const CourseDetailsPage = async ({ params }: CourseDetailsPageProps) => {
               <Badge
                 title="Share"
                 icon={Share2}
-                className="py-2 px-6 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2 bg-electric-lime-400"
+                className="py-2 px-6 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2 bg-electric-lime-400 hover:bg-electric-lime-400/90 hover:cursor-pointer"
               />
             </div>
           </div>

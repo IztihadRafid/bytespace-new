@@ -13,6 +13,7 @@ import { courses } from "@/lib/data";
 const CreatorsPage = () => {
   return (
     <div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-[size:80px_80px] pointer-events-none" />
       <Navbar></Navbar>
       <main>
         <section className=" bg-brand max-w-[1440px] mx-auto">
@@ -67,7 +68,7 @@ const CreatorsPage = () => {
                 </button>
               </div>
 
-              <button className="px-6 py-3 rounded-3xl bg-electric-lime-400 text-[#040819] font-satoshi-500 text-[18px] leading-[120%]">
+              <button className="px-6 py-3 rounded-3xl bg-electric-lime-400 hover:bg-electric-lime-400/90 hover:cursor-pointer text-[#040819] font-satoshi-500 text-[18px] leading-[120%]">
                 Follow
               </button>
             </div>
@@ -79,24 +80,24 @@ const CreatorsPage = () => {
             <Badge
               title="Filter"
               icon={Funnel}
-              className="py-3 px-4 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2"
+              className="py-3 px-4 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2 hover:bg-shuttle-gray-50 hover:cursor-pointer"
             />
             <Badge
               title="Level"
               icon={ChartNoAxesColumnIncreasing}
-              className="py-3 px-4 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2"
+              className="py-3 px-4 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2 hover:bg-shuttle-gray-50 hover:cursor-pointer"
             />
             <Badge
               title="Category"
               icon={Shapes}
-              className="py-3 px-4 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2"
+              className="py-3 px-4 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2 hover:bg-shuttle-gray-50 hover:cursor-pointer"
             />
           </div>
           <div>
             <Badge
               title="Most relevant"
               icon={TextAlignStart}
-              className="py-3 px-4 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2"
+              className="py-3 px-4 rounded-3xl border border-shuttle-gray-200 flex items-center gap-2 hover:bg-shuttle-gray-50 hover:cursor-pointer"
             />
           </div>
         </section>

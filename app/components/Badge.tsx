@@ -19,7 +19,7 @@ const Badge = ({
     <button type="button" className={className}>
       <Icon size={16} className={iconClassName} fill={iconFill} />
 
-      <p className="font-satoshi-500 text-[16px] leading-[120%] text-shuttle-gray-700">
+      <p className="font-satoshi-500 text-[16px] leading-[120%] text-shuttle-gray-700 hover:text-shuttle-gray-950">
         {title}
       </p>
     </button>

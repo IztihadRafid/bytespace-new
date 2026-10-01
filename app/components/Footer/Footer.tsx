@@ -40,7 +40,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-3 font-satoshi-400 text-[13px] text-gray-700">
               <li>
                 <Link
-                  href="#"
+                  href="/courses"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Featured Courses
@@ -48,7 +48,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/categories"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Featured Categories
@@ -56,7 +56,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/business"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Business
@@ -64,7 +64,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/it"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   IT
@@ -72,7 +72,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/design"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Design
@@ -84,7 +84,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-3 font-satoshi-400 text-[13px] text-gray-700">
               <li>
                 <Link
-                  href="#"
+                  href="/development"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Development
@@ -92,7 +92,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/marketing"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Marketing
@@ -100,7 +100,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/photography"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Photography
@@ -108,7 +108,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/finance"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Finance
@@ -116,7 +116,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/sport"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Sport
@@ -128,7 +128,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-3 font-satoshi-400 text-[13px] text-gray-700">
               <li>
                 <Link
-                  href="#"
+                  href="/creator"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Become a Creator
@@ -136,7 +136,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/affiliate"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Affiliate Program
@@ -144,7 +144,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Contact
@@ -152,7 +152,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/help"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   Help
@@ -160,7 +160,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="font-satoshi-400 text-[14px] text-shuttle-gray-950 leading-[160%]"
                 >
                   About
@@ -176,19 +176,19 @@ const Footer = () => {
 
           <div className="flex items-center gap-6">
             <Link
-              href="#"
+              href="/privacy"
               className="font-satoshi-400 text-[12px] text-shuttle-gray-950 leading-[160%]"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="/terms"
               className="font-satoshi-400 text-[12px] text-shuttle-gray-950 leading-[160%]"
             >
               Terms of Service
             </Link>
             <Link
-              href="#"
+              href="/cookies"
               className="font-satoshi-400 text-[12px] text-shuttle-gray-950 leading-[160%]"
             >
               Cookies Settings

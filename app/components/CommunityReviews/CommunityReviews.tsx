@@ -4,10 +4,10 @@ import Image from "next/image";
 export default function CommunityReviews() {
   return (
     <section className="relative overflow-hidden bg-white py-10 px-6 sm:px-10 md:px-16 lg:px-20 min-h-screen flex items-center justify-center">
-      {/* Top-Right Lime Gradient (Deeper Opacity & Color) */}
+      {/* Top-Right Lime Gradient */}
       <div className="pointer-events-none absolute top-[-10%] right-[-5%] w-[650px] h-[650px] rounded-full bg-[radial-gradient(circle,_rgba(212,251,32,0.85)_0%,_rgba(255,255,255,0)_70%)] blur-3xl opacity-100" />
 
-      {/* Bottom-Left Blue Gradient (Deeper Opacity & Color) */}
+      {/* Bottom-Left Blue Gradient */}
       <div className="pointer-events-none absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,_rgba(147,197,253,0.85)_0%,_rgba(255,255,255,0)_70%)] blur-3xl opacity-100" />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">

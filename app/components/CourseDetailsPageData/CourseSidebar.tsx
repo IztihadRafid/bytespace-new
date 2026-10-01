@@ -53,8 +53,8 @@ export default function CourseSidebar() {
         </div>
 
         <Link
-          href="/"
-          className="bg-electric-lime-400 hover:bg-electric-lime-500 font-satoshi-500 w-83 rounded-3xl py-3 px-6 text-center text-[16px] leading-[120%] text-shuttle-gray-950 transition-colors"
+          href="/login"
+          className="bg-electric-lime-400 hover:bg-electric-lime-400/80 font-satoshi-500 w-83 rounded-3xl py-3 px-6 text-center text-[16px] leading-[120%] text-shuttle-gray-950 transition-colors"
         >
           Enroll Now
         </Link>

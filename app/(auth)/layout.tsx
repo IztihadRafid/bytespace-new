@@ -38,15 +38,15 @@ export default function AuthLayout({
       {/* Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-[size:80px_80px] pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-[1200px] flex items-center justify-start">
+      <div className="relative z-10 w-full max-w-[1200px] flex items-center justify-start mt-3">
         <Link href="/">
           <Image src={logo} width={32} height={35} alt="Logo" />
         </Link>
       </div>
 
-      <div className="relative z-10  grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="relative z-10  grid grid-cols-1 lg:grid-cols-2 gap-12 ">
         {/* Left Side Showcase */}
-        <div className="-mt-10">
+        <div className="">
           <div className="flex flex-col gap-4 ml-20">
             <AuthHeader title={content.title} />
             <AuthSubHeader subtitle={content.subtitle} />
@@ -63,7 +63,7 @@ export default function AuthLayout({
                 price={25}
               />
             </div>
-            <div className="absolute -top-22 right-22 z-10">
+            <div className="absolute -top-22 right-15 z-10">
               <Card
                 courseImg={imgcard}
                 title={"the Power of Big Data"}
@@ -81,13 +81,13 @@ export default function AuthLayout({
                 alt="Green Circle"
               />
             </div>
-            <div className="absolute top-67 right-10 z-20">
+            <div className="absolute top-72 right-10 z-20">
               <Image src={spring} width={175} height={175} alt="Spring" />
             </div>
-            <div className="absolute top-85 left-18">
+            <div className="absolute top-85 left-20">
               <Image src={triangle} width={188} height={188} alt="Triangle" />
             </div>
-            <div className="absolute top-95 right-23">
+            <div className="absolute top-100 right-15">
               <HappyStudentBadge variant="lime"></HappyStudentBadge>
             </div>
           </div>
@@ -97,7 +97,6 @@ export default function AuthLayout({
         <div className="w-full flex justify-center">{children}</div>
       </div>
 
-      {/* Bottom spacing anchor to keep vertically balanced */}
       <div className="relative z-10 w-full max-w-[1200px] pointer-events-none" />
     </main>
   );

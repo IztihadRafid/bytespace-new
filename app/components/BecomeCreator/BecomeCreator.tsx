@@ -7,49 +7,52 @@ import t1 from "@/public/assets/becomeCreatorImages/t1.png";
 import t2 from "@/public/assets/becomeCreatorImages/t2.png";
 import Image from "next/image";
 import { ButtonGreen } from "../ui/ButtonGreen";
+import Link from "next/link";
 const BecomeCreator = () => {
   return (
-    <section className="bg-brand h-[488px] ">
-      <div className="relative ">
+    <section className="relative bg-brand h-[488px] overflow-hidden">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-[size:80px_80px] pointer-events-none" />
+      <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0">
-          <Image src={sp1} alt="sp1"></Image>
+          <Image src={sp1} alt="sp1" />
         </div>
-        <div className="absolute left-50">
-          <Image src={sp2} alt="sp2"></Image>
+        <div className="absolute left-[200px]">
+          <Image src={sp2} alt="sp2" />
         </div>
-        <div className="absolute top-10 right-45">
-          <Image src={t1} alt="t1"></Image>
+        <div className="absolute top-[40px] right-[180px]">
+          <Image src={t1} alt="t1" />
         </div>
-        <div className="absolute top-55 left-0">
-          {" "}
-          <Image src={t2} alt="t2"></Image>
+        <div className="absolute top-[220px] left-0">
+          <Image src={t2} alt="t2" />
         </div>
-        <div className="absolute top-10 right-0">
-          {" "}
-          <Image src={r1} alt="r1"></Image>
+        <div className="absolute top-[40px] right-0">
+          <Image src={r1} alt="r1" />
         </div>
-        <div className="absolute top-75 left-10">
-          {" "}
-          <Image src={c1} alt="c1"></Image>
+        <div className="absolute top-[300px] left-[40px]">
+          <Image src={c1} alt="c1" />
         </div>
-        <div className="absolute top-73 right-0">
-          {" "}
-          <Image src={sp3} alt="sp3"></Image>
+        <div className="absolute top-[290px] right-0">
+          <Image src={sp3} alt="sp3" />
         </div>
       </div>
-      <div className="text-center flex flex-col items-center gap-10 text-shuttle-gray-50 p-36">
+
+      {/* Text Section */}
+      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center gap-6 text-shuttle-gray-50 px-6 py-10 max-w-[1200px] mx-auto">
         <h4 className="font-poppins-600 text-[44px] leading-[120%] tracking-[-1%]">
-          Unlock Your Potential as a<br></br> Creator with ByteSpace
+          Unlock Your Potential as a<br /> Creator with ByteSpace
         </h4>
-        <p>
+        <p className="max-w-[900px] font-satoshi-400 text-base leading-[150%]">
           Experience the collaboration of numerous creators and an expanding
-          selection of courses. Register now and become a<br></br> part of a
+          selection of courses. Register now and become a<br /> part of a
           community comprising over 10,000 local and international creators.
-          Utilize our Course Editor, and showcase your<br></br> expertise by
-          publishing your finest course on the ByteSpace Course Library.
+          Utilize our Course Editor, and showcase your
+          <br /> expertise by publishing your finest course on the ByteSpace
+          Course Library.
         </p>
         <div className="text-shuttle-gray-950 text-[18px]">
-          <ButtonGreen className=" " label="Join as Creator"></ButtonGreen>
+          <Link href="/login">
+            <ButtonGreen label="Join as Creator" />
+          </Link>
         </div>
       </div>
     </section>
