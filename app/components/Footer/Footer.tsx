@@ -6,8 +6,8 @@ import { ButtonGreen } from "../ui/ButtonGreen";
 import { SearchInput } from "../SearchInput";
 const Footer = () => {
   return (
-    <footer className=" bg-white py-12 border-t border-shuttle-gray-100 max-w-[1200px]  mx-auto">
-      <div className="">
+    <footer className=" bg-white py-12 border-t border-shuttle-gray-100 max-w-[1440px] mx-auto">
+      <div className="max-w-[1200px]  mx-auto">
         <div className="flex flex-col lg:flex-row justify-between gap-12 mb-16">
           <div className=" flex flex-col gap-4">
             <div className="flex items-center gap-2">
