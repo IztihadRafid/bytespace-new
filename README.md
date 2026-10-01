@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ByteSpace
+
+An online course marketplace landing experience — browse courses, explore learning paths, and discover instructors, rebuilt from a Figma design with pixel-level attention to color, type, and spacing.
+
+**Live:** [bytespace-new-opal.vercel.app](https://bytespace-new-opal.vercel.app)
+
+---
+
+## Overview
+
+ByteSpace helps learners discover courses across design, development, business, marketing, and more, while giving instructors a place to publish and manage their own content. This repo contains the marketing site: a full landing page plus authentication UI and a few supporting routes.
+
+## Tech Stack
+
+| Category   | Choice                                       |
+| ---------- | -------------------------------------------- |
+| Framework  | Next.js (App Router)                         |
+| Language   | TypeScript                                   |
+| Styling    | Tailwind CSS (utility-first)                 |
+| Icons      | lucide-react                                 |
+| Fonts      | Satoshi (self-hosted, via `next/font/local`) |
+| Deployment | Vercel                                       |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# install dependencies
+npm install
+
+# start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To confirm a production build compiles cleanly before deploying:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/            Routes — landing page, login, register, courses, creators
+components/     Reusable UI pieces and page sections
+lib/            Static content (courses, categories, testimonials, nav links)
+public/         Static assets — logo, imagery, icons
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Repeated UI (course cards, category chips, avatar stacks, path cards, testimonial cards) is built as small reusable components driven by data arrays in `lib/`, rather than duplicated markup per item.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Routing
 
-## Deploy on Vercel
+Built with the Next.js App Router, each folder under `app/` maps directly to a URL segment:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Route           | Description                                   |
+| --------------- | --------------------------------------------- |
+| `/`             | Landing page                                  |
+| `/login`        | Sign in                                       |
+| `/register`     | Create an account                             |
+| `/courses`      | Course catalog                                |
+| `/courses/[id]` | Dynamic route — individual course detail page |
+| `/creators`     | Creators listing                              |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dynamic segments (like `/courses/[id]`) render per-course pages from a single template, driven by the course data in `lib/`.
+
+## Features
+
+- **Landing page** — hero, partner logo strip, filterable course catalog, learning paths grid, growth/stats section, creator call-to-action, testimonials, footer
+- **Authentication UI** — Login and Signup pages with client-side validation
+- **Course catalog** — browsable course cards with ratings, pricing, and difficulty level
+- **Course detail pages** — dynamic routing per course, with tabs for overview, reviews, and about
+- **Creators page** — showcases instructors on the platform
+- **Responsive layout** — tuned for mobile, tablet, and desktop breakpoints
+- **Design system tokens** — brand colors and typography configured through Tailwind's theme
+
+## Known Limitations
+
+- Authentication is presentational only — there is no backend, session handling, or data persistence.
+- A handful of footer links point to routes outside the current scope and are placeholders.
+
+## Deployment
+
+Hosted on [Vercel](https://vercel.com), connected to the `main` branch for automatic deployments on every push.
+
+---
+
+Built by [Iztihad Rafid](https://github.com/IztihadRafid)
