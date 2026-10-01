@@ -1,26 +1,137 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Colors */
+  --color-brand: #003be2;
+  --color-electric-lime-400: #d4fb20;
+  --color-shuttle-gray-50: #f5f5f6;
+  --color-shuttle-gray-100: #e5e6e8;
+  --color-shuttle-gray-400: #82868e;
+  --color-shuttle-gray-950: #242528;
+  --color-shuttle-gray-700: #4b4c53;
+  --color-persian-blue-800: #003be2;
+  --color-shuttle-gray-200: #ced0d3;
+  --color-black-700: #4f4f4f;
+  --color-black-950: #242528;
+
+  /* Font families */
+  --font-satoshi: var(--font-satoshi-local);
+  --font-clash: var(--font-clash-local);
+  --font-poppins: var(--font-poppins-local);
+
+  /* Default Tailwind sans */
+  --font-sans: var(--font-poppins-local);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Satoshi */
+@utility font-satoshi-300 {
+  font-family: var(--font-satoshi-local);
+  font-weight: 300;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility font-satoshi-400 {
+  font-family: var(--font-satoshi-local);
+  font-weight: 400;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility font-satoshi-500 {
+  font-family: var(--font-satoshi-local);
+  font-weight: 500;
+}
+
+@utility font-satoshi-600 {
+  font-family: var(--font-satoshi-local);
+  font-weight: 600;
+}
+
+@utility font-satoshi-700 {
+  font-family: var(--font-satoshi-local);
+  font-weight: 700;
+}
+
+@utility font-satoshi-800 {
+  font-family: var(--font-satoshi-local);
+  font-weight: 800;
+}
+
+@utility font-satoshi-900 {
+  font-family: var(--font-satoshi-local);
+  font-weight: 900;
+}
+
+/* Clash Display */
+@utility font-clash-200 {
+  font-family: var(--font-clash-local);
+  font-weight: 200;
+}
+
+@utility font-clash-300 {
+  font-family: var(--font-clash-local);
+  font-weight: 300;
+}
+
+@utility font-clash-400 {
+  font-family: var(--font-clash-local);
+  font-weight: 400;
+}
+
+@utility font-clash-500 {
+  font-family: var(--font-clash-local);
+  font-weight: 500;
+}
+
+@utility font-clash-600 {
+  font-family: var(--font-clash-local);
+  font-weight: 600;
+}
+
+@utility font-clash-700 {
+  font-family: var(--font-clash-local);
+  font-weight: 700;
+}
+
+/* Poppins */
+@utility font-poppins-100 {
+  font-family: var(--font-poppins-local);
+  font-weight: 100;
+}
+
+@utility font-poppins-200 {
+  font-family: var(--font-poppins-local);
+  font-weight: 200;
+}
+
+@utility font-poppins-300 {
+  font-family: var(--font-poppins-local);
+  font-weight: 300;
+}
+
+@utility font-poppins-400 {
+  font-family: var(--font-poppins-local);
+  font-weight: 400;
+}
+
+@utility font-poppins-500 {
+  font-family: var(--font-poppins-local);
+  font-weight: 500;
+}
+
+@utility font-poppins-600 {
+  font-family: var(--font-poppins-local);
+  font-weight: 600;
+}
+
+@utility font-poppins-700 {
+  font-family: var(--font-poppins-local);
+  font-weight: 700;
+}
+
+@utility font-poppins-800 {
+  font-family: var(--font-poppins-local);
+  font-weight: 800;
+}
+
+@utility font-poppins-900 {
+  font-family: var(--font-poppins-local);
+  font-weight: 900;
 }
