@@ -14,14 +14,14 @@ export default function LoginForm() {
     router.push("/");
   };
   return (
-    <div className="w-full max-w-[579px] bg-white rounded-[32px] p-8 sm:p-12 shadow-xl flex flex-col justify-between min-h-[620px]">
+    <div className="w-full  lg:max-w-[579px] bg-white rounded-[32px] p-8 sm:p-12 shadow-xl flex flex-col justify-between min-h-[620px]">
       <div className="h-[683px]">
         {/* Header Section */}
         <div className="mb-6 ">
           <span className="font-satoshi-400 text-[18px] text-persian-blue-800 leading-[160%] mb-2">
             Sign In
           </span>
-          <h1 className="font-poppins-600 text-[44px] leading-[120%] tracking-[-1%] text-shuttle-gray-950">
+          <h1 className="font-poppins-600 text-3xl lg:text-[44px] leading-[120%] tracking-[-1%] text-shuttle-gray-950">
             Welcome Back
           </h1>
         </div>
@@ -95,7 +95,7 @@ export default function LoginForm() {
         </div>
 
         <div className="text-center pt-4 relative">
-          <p className="font-satoshi-400 text-[16px] absolute top-15 left-1/2 -translate-x-1/2 text-shuttle-gray-700">
+          <p className="font-satoshi-400 text-[16px] lg:absolute lg:top-15 lg:left-1/2 lg:-translate-x-1/2 text-shuttle-gray-700">
             New user?{" "}
             <Link
               href="/register"

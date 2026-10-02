@@ -6,8 +6,8 @@ import { ButtonGreen } from "../ui/ButtonGreen";
 import { SearchInput } from "../SearchInput";
 const Footer = () => {
   return (
-    <footer className=" bg-white py-12 border-t border-shuttle-gray-100 max-w-[1440px] mx-auto">
-      <div className="max-w-[1200px]  mx-auto">
+    <footer className="bg-white lg:p-0 p-3 py-12 border-t border-shuttle-gray-100 w-full lg:max-w-[1440px] mx-auto">
+      <div className="lg:max-w-[1200px] w-full  mx-auto">
         <div className="flex flex-col lg:flex-row justify-between gap-12 mb-16">
           <div className=" flex flex-col gap-4">
             <div className="flex items-center gap-2">
@@ -23,7 +23,7 @@ const Footer = () => {
             </p>
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="flex items-center gap-6 my-1"
+              className="flex lg:flex-row flex-col items-start start md:items-center gap-6 my-1 "
             >
               <SearchInput placeholder="Enter your Email"></SearchInput>
               <ButtonGreen type="submit">Search</ButtonGreen>
@@ -35,7 +35,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16 pt-2 w-[580px]">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16 pt-2 w-full lg:w-[580px]">
             {/* Column 1 */}
             <ul className="flex flex-col gap-3 font-satoshi-400 text-[13px] text-gray-700">
               <li>

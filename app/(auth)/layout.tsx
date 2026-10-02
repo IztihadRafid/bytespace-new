@@ -52,7 +52,7 @@ export default function AuthLayout({
             <AuthSubHeader subtitle={content.subtitle} />
           </div>
 
-          <div className="relative mt-40">
+          <div className="relative mt-40 hidden lg:block">
             <div className="absolute top-0 left-20">
               <Card
                 courseImg={imgcard2}
