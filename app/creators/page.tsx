@@ -16,8 +16,8 @@ const CreatorsPage = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-[size:80px_80px] pointer-events-none" />
       <Navbar></Navbar>
       <main>
-        <section className=" bg-brand max-w-[1440px] mx-auto">
-          <div className="max-w-[1200px] mx-auto p-8 pb-20 text-white flex flex-col justify-between gap-10">
+        <section className=" bg-brand w-full lg:max-w-[1440px] mx-auto">
+          <div className="lg:max-w-[1200px] w-full mx-auto p-8 pb-20 text-white flex flex-col justify-between gap-10">
             <div className="flex items-center gap-6">
               <Image
                 src="/assets/peopleprofile/p1.png"
@@ -29,8 +29,8 @@ const CreatorsPage = () => {
 
               {/* Name & Role */}
               <div className="flex flex-col gap-2">
-                <div className="flex items-center gap-2">
-                  <h1 className="font-poppins-600 text-[36px] leading-[120%] tracking-[-1%] text-shuttle-gray-50">
+                <div className="flex lg:flex-row flex-col item-start lg:items-center gap-2">
+                  <h1 className="font-poppins-600 text-2xl lg:text-[36px] leading-[120%] tracking-[-1%] text-shuttle-gray-50">
                     PurePearl Studio
                   </h1>
                   <span className="px-6 py-2 rounded-3xl bg-electric-lime-400 text-shuttle-gray-950 font-satoshi-500 leading-[120%] text-[16px]">
@@ -55,8 +55,8 @@ const CreatorsPage = () => {
               with me.
             </p>
 
-            <div className="flex items-center justify-between w-[1198px]">
-              <div className="flex items-center gap-4">
+            <div className="flex items-center justify-between w-full lg:w-[1198px]">
+              <div className="flex lg:flex-row flex-wrap items-center gap-4">
                 <button className="px-6 py-3 rounded-3xl bg-white text-shuttle-gray-950 text-[18px] flex items-center gap-1.5 leading-[120%] font-satoshi-500">
                   <span className="text-brand">3</span>
                   <span>Products</span>
@@ -75,7 +75,7 @@ const CreatorsPage = () => {
           </div>
         </section>
 
-        <section className="flex items-center justify-between max-w-[1201px] mx-auto mt-20">
+        <section className="flex lg:flex-row gap-2 lg:gap-0 flex-wrap items-center justify-between w-full lg:max-w-[1201px] mx-auto mt-20">
           <div className="flex items-center gap-4">
             <Badge
               title="Filter"

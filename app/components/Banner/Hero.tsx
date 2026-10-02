@@ -16,24 +16,24 @@ import HappyStudentBadge from "../ui/HappyStudentBadge";
 
 const Hero = () => {
   return (
-    <div className="overflow-hidden pt-16 pb-24 w-full h-[910px]">
-      <div className="relative w-[1200px] mx-auto text-center flex flex-col gap-[60px]">
+    <div className="overflow-hidden pt-10 lg:pt-16 pb-24 w-full h-[560px] md:h-[680px] lg:h-[910px]">
+      <div className="relative w-full lg:w-[1200px] mx-auto text-center flex flex-col gap-10 lg:gap-[60px] px-4 lg:px-0">
         <div className="flex flex-col gap-8">
-          <h1 className="font-poppins-600 text-[72px] text-white leading-[120%] tracking-[-0.01em]">
+          <h1 className="font-poppins-600 text-[32px] md:text-[48px] lg:text-[72px] text-white leading-[120%] tracking-[-0.01em]">
             Get Access to Hundreds
-            <br /> Courses Available
+            <br className="hidden md:block" /> Courses Available
           </h1>
-          <p className="text-shuttle-gray-100 font-satoshi-400 text-[18px]">
+          <p className="text-shuttle-gray-100 font-satoshi-400 text-[16px] lg:text-[18px] z-20 z-0">
             Unlock your creativity, gain valuable knowledge, and grow your
             business with our wide range of courses.
           </p>
         </div>
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
           <SearchInput placeholder="Course, topic, creator" />
           <ButtonGreen />
         </div>
       </div>
-      <div className="abosolute top-40 z-40 w-[1440px] mx-auto">
+      <div className="hidden lg:block abosolute top-40 z-40 w-[1440px] mx-auto">
         <ColoredOrnament
           src={spring1}
           color="var(--color-electric-lime-400)"
@@ -66,9 +66,9 @@ const Hero = () => {
         />
       </div>
 
-      <div className="relative w-[1200px] mx-auto">
-        <div className="absolute -top-170 left-5">
-          <div>
+      <div className="relative w-full lg:w-[1200px] mx-auto mt-8 md:mt-10 lg:mt-0 h-[130px] md:h-[270px] lg:h-auto">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1149px] origin-top scale-[0.28] md:scale-[0.6] lg:-top-170 lg:left-5 lg:translate-x-0 lg:scale-100 lg:origin-center">
+          <div className="">
             <Image src={elipse} alt="elipse" width={1149} height={1149}></Image>
             <div className="absolute -top-18 left-[25%]">
               <Image src={bannerImg} alt="banner"></Image>

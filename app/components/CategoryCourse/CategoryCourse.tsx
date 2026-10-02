@@ -7,7 +7,7 @@ export default function CategoryCourse() {
   const [active, setActive] = useState(courseCategory[0] || "Featured");
 
   return (
-    <div className="flex items-center justify-center gap-3 bg-white  ">
+    <div className="flex md:flex-row flex-wrap items-center justify-center gap-3 bg-white  ">
       {courseCategory.map((category) => (
         <button
           key={category}

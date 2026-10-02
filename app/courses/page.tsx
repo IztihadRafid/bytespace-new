@@ -23,7 +23,7 @@ const CoursePage = () => {
         <h1 className="font-poppins-600 text-center text-[36px] leading-[120%] tracking-[-1%] text-shuttle-gray-50">
           Find Your Next Course
         </h1>
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex lg:flex-row flex-col items-center justify-center gap-4">
           <SearchInput></SearchInput>
           <button className="flex items-center bg-electric-lime-400 hover:bg-electric-lime-400/90 py-3 px-6 rounded-3xl text-shuttle-gray-950 font-satoshi-500 text-[18px] leading-[120%]">
             Courses <ChevronDown size={24} />
@@ -32,7 +32,7 @@ const CoursePage = () => {
       </section>
 
       <section className="mt-12 mb-10">
-        <div className="flex items-center justify-between max-w-[1200px] mx-auto">
+        <div className="flex md:flex-row flex-col gap-1 md:gap-0 items-center justify-between max-w-[1200px] mx-auto">
           <div className="flex items-center gap-4">
             <Badge
               title="Filter"

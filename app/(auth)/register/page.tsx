@@ -14,14 +14,14 @@ export default function RegisterForm() {
     router.push("/");
   };
   return (
-    <div className="w-full max-w-[579px] bg-white rounded-3xl sm:p-12 shadow-xl flex flex-col justify-between ">
+    <div className="w-full lg:max-w-[579px] bg-white rounded-3xl p-8 lg:p-12 shadow-xl flex flex-col justify-between ">
       <div className="h-[683px]">
         {/* Header Section */}
         <div className="mb-10">
           <span className="font-satoshi-400 text-[18px] text-persian-blue-800 leading-[160%] mb-2">
             Create an Account
           </span>
-          <h1 className="font-poppins-600 text-[44px] leading-[120%] tracking-[-1%] text-shuttle-gray-950">
+          <h1 className="font-poppins-600 text-3xl lg:text-[44px] leading-[120%] tracking-[-1%] text-shuttle-gray-950">
             Welcome to <br />
             ByteSpace
           </h1>
